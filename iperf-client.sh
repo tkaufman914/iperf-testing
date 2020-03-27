@@ -18,7 +18,7 @@ while [ $i -le $INSTANCE ]
 do
   echo $i
   echo $PORT
-  "iperf3 -c $IP_ADDR -t 10 -P5 -p $PORT --json >> ${IP_ADDR}-test${TEST_NO}-stream${i}.json &"
+  iperf3 -c $IP_ADDR -t 10 -P5 -p $PORT --json >> ${IP_ADDR}-test${TEST_NO}-stream${i}.json &
   i=$(( $i + 1  ))
   PORT=$(( $PORT + 1))
 done
