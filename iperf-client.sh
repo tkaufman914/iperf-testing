@@ -5,9 +5,9 @@ PORT=$3
 INSTANCE=$4
 JSON=$5
 echo
-echo "Usage iperf-client.sh  IPaddress TestNumber PortNumber InstanceCount --json"
+echo "Usage: iperf-client.sh  IPaddress TestNumber PortNumber InstanceCount --json"
 echo
-echo "example iperf-client.sh 192.168.5.10 5 2001 5 --json"
+echo "example: iperf-client.sh 192.168.5.10 5 2001 5 --json"
 i=0
 if [ -z $IP_ADDR ]
 then echo "Missing IP Address" && exit 1
