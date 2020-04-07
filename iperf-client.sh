@@ -18,12 +18,17 @@ fi
 if [ -z $PORT ]
 then echo "Missing Starting Port Number" && 1
 fi
-echo "Starting iperf3"
+echo
+echo "Starting iperf3 Client..."
+echo
+echo "Test ${TEST_NO}"
+echo
+sleep 2
 while [ $i -le $INSTANCE ]
 do
-  echo "Test ${i}"
-  echo $PORT
-     if [ "$JSON" = "--json" ]
+  echo
+  echo "Using Ports ${PORT}"
+  if [ "$JSON" = "--json" ]
       then
           iperf3 -c $IP_ADDR -t 10 -P5 -p $PORT --json >> ${IP_ADDR}-Test-${TEST_NO}-stream${i}.json &
       else
