@@ -18,7 +18,7 @@ fi
 echo
 echo
 echo
-echo "Starting Iperf..."
+echo "Starting Iperf3 Server..."
 echo
 echo
 echo
@@ -31,3 +31,4 @@ do
 	PORT=$(( $PORT + 1))
 
 done
+© 2020 GitHub, Inc.
